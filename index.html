@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>daisy-responsive-project</title>
+
     <!-- daisy and tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
     <script>
@@ -24,208 +26,55 @@
     </script>
 </head>
 
-<body class="bg-white">
+<body class="">
     <header>
-        <!-- nav section -->
-        <div class="flex justify-between w-11/12 mx-auto py-3">
-            <div class="flex space-x-2 items-center">
-                <img src="images/icon/logo-secondary.png" alt="" class="w-10">
-                <span class="text-xl text-black font-bold">BHARAT </span>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
             </div>
-            <div class="flex gap-4 items-center  list-none">
-                <li class="text-black font-medium">Home</li>
-                <li class="text-black font-medium">Service</li>
-                <li class="text-black font-medium">Project</li>
-                <li class="text-black font-medium">Skill</li>
-                <li class="text-black font-medium">Resume</li>
-                <li class="text-black font-medium">Review</li>
-            </div>
-            <div>
-                <button class="py-2 px-6 rounded-xl bg-blue-700 text-lg font-semibold ">Hire me</button>
-            </div>
-        </div>
-
+        </nav>
     </header>
-    <main>
-        <!-- hero section -->
-        <div class="hero-section w-11/12 mx-auto">
-            <div class="hero  min-h-screen">
-                <div class="hero-content justify-between flex-col lg:flex-row-reverse">
-                    <img src="images/hero_img.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-
-                    <div>
-                        <h3 class="text-2xl font-bold">I am Bharat</h3>
-                        <h1 class="text-5xl font-bold text-[#5C34AB]"> I am Frontend<br> Web Developer</h1>
-                        <p class="py-6  w-[600px]">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Eaque nobis sit iusto facere delectus voluptatum dolorum vero
-                            aliquid quibusdam pariatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Libero, illo!
-                        </p>
-                        <div class="flex items-center gap-6">
-                            <button class="btn btn-primary text-white">Get Started</button>
-                            <div class="flex gap-3 items-center">
-                                <img src="images/icon/facebook.png" alt="" class="w-8">
-                                <img src="images/icon/linkedin.png" alt="" class="w-7 ">
-                                <img src="images/icon/Twitter-X.png" alt="" class="w-7 ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- rating section -->
-            <div class=" flex items-center gap-3 justify-between py-6">
-                <div class="flex gap-3 items-center">
-                    <h1 class="text-6xl font-bold text-[#5C34AB]">14</h1>
-                    <p class="font-medium text-">Of year <br>Exprience</p>
-                </div>
-                <div class="flex gap-3 items-center">
-                    <h1 class="text-6xl font-bold text-[#5C34AB]">50</h1>
-                    <p class="font-medium text-">Of year <br>Exprience</p>
-                </div>
-                <div class="flex gap-3 items-center">
-                    <h1 class="text-6xl font-bold text-[#5C34AB]">1.5k</h1>
-                    <p class="font-medium text-">Of year <br>Exprience</p>
-                </div>
-                <div class="flex gap-3 items-center">
-                    <h1 class="text-6xl font-bold text-[#5C34AB]">200</h1>
-                    <p class="font-medium text-">Of year <br>Exprience</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- resume section -->
-        <div class="my-14  bg-[#F6F3FC]">
-            <div class="py-14">
-                <h1 class="text-5xl font-bold text-[#5c34ab] text-center mb-6">My Resume</h1>
-                <p class="text-center px-48">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                    expedita unde repudiandae dolorum, et quis odit non voluptates quod eos libero esse, hic nostrum,
-                    aliquid maiores optio facilis nihil cumque.</p>
-
-                <div class=" py-6 w-11/12 mx-auto ">
-
-
-                    <div class="flex  justify-between bg-[#663BBD] px-4  items-center py-7 my-6">
-                        <div class="text-3xl font-bold  text-white">01 Web Development</div>
-                        <div>
-                            <p class="w-[700px]   text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Libero cum voluptas quo doloribus sit quibusdam magni natus culpa nam, quia distinctio
-                                a, autem illo laborum ipsum voluptatibus .</p>
-                        </div>
-                    </div>
-
-                    <div class="flex  justify-between px-4 items-center py-7 my-6">
-                        <div class="text-3xl font-bold  text-[#5c34ab]">02 Apps Development</div>
-                        <div>
-                            <p class="w-[700px]   text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Libero cum voluptas quo doloribus sit quibusdam magni natus culpa nam, quia
-                                distinctio a, autem illo laborum ipsum voluptatibus .</p>
-                        </div>
-                    </div>
-
-                    <div class="flex  justify-between  px-4 items-center py-7 my-6">
-                        <div class="text-3xl font-bold  text-[#5c34ab]">03 Ui/Ux Design</div>
-                        <div>
-                            <p class="w-[700px]   text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Libero cum voluptas quo doloribus sit quibusdam magni natus culpa nam, quia
-                                distinctio a, autem illo laborum ipsum voluptatibus .</p>
-                        </div>
-                    </div>
-
-                    <div class="flex  justify-between px-4 items-center py-7 my-6">
-                        <div class="text-3xl font-bold  text-[#5c34ab]">04 Digital Marketing</div>
-                        <div>
-                            <p class="w-[700px]   text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Libero cum voluptas quo doloribus sit quibusdam magni natus culpa nam, quia
-                                distinctio a, autem illo laborum ipsum voluptatibus .</p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
-        <!-- project -section -->
-        <div class="w-11/12 mx-auto ">
-          <div class="flex flex-col gap-8 justify-center items-center">
-            <h1 class="text-5xl font-bold text-[#5c34ab] text-center ">My Project</h1>
-            <div>
-                <div class="flex gap-8 items-center mx-auto list-none bg-[#F6F3FC] py-2 px-6 rounded-full">
-                    <li class="text-black font-medium">All</li>
-                    <li class="text-black font-medium">Apps</li>
-                    <li class="text-black font-medium">Branding</li>
-                    <li class="text-black font-medium">Contact</li>
-                    <li class="text-black font-medium">UI/UX</li>
-                    <li class="text-black font-medium">Review</li>
-                </div>
-          </div>
-            </div>
-            <div class="grid grid-cols-2 items-center gap-8 py-10">
-                <img src="images/project-5.jpeg" alt="" class="w-[600px]">
-                <img src="images/project-2.jpeg" alt="" class="w-[600px]">
-                <img src="images/project-6.png" alt="" class="w-[600px]">
-                <img src="images/project-7.jpg" alt="" class="w-[600px]">
-            </div>
-        </div>
-        <!-- my skill -->
-         <div>
-             <!-- Projects Section -->
-    <section id="projects" class="py-12 mt-20 bg-gray-200">
-        <div class="container w-11/12 mx-auto">
-            <h2 class="text-5xl font-bold text-[#5c34ab] text-center py-7">My Projects</h2>
-            <p class="text-center py-6 px-48">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                expedita unde repudiandae dolorum, et quis odit non voluptates quod eos libero esse, hic nostrum,
-                aliquid maiores optio facilis nihil cumque.</p>
-            <div class="flex gap-8 ">
-                <!-- Project 1 -->
-                <div class="bg-[#F6F3FC] flex flex-col  items-center justify-center rounded-2xl">
-                    <img class="p-5 w-[200px]" src="images/icon/figma.png" alt="">
-                    <p class="text-gray-700 text-center text-lg font-bold">Figma</p>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-[#F6F3FC] flex flex-col  items-center justify-center rounded-2xl">
-                    <img class="p-5 w-[200px]" src="images/icon/sketch.png" alt="">
-                    <p class="text-gray-700 text-center text-lg font-bold py-3">Figma</p>
-                </div>
-                <!-- Project 3 -->
-                <div class="bg-[#F6F3FC] flex flex-col  items-center justify-center rounded-2xl">
-                    <img class="p-5 w-[200px]" src="images/icon/wp.png" alt="">
-                    <p class="text-gray-700 text-center text-lg font- py-3">Figma</p>
-                </div>
-                <!-- Project 4 -->
-                <div class="bg-[#F6F3FC] flex flex-col  items-center justify-center rounded-2xl">
-                    <img class="p-5 w-[200px]" src="images/icon/xd.png" alt="">
-                    <p class="text-gray-700 text-center text-lg font- py-3">Figma</p>
-                </div>
-                <!-- Project  -->
-                <div class="bg-[#F6F3FC] flex flex-col  items-center justify-center rounded-2xl">
-                    <img class="p-5 w-[200px]" src="images/icon/js.png" alt="">
-                    <p class="text-gray-700 text-center text-lg font- py-3">Figma</p>
-                </div>
-            </div>
-        </div>
-    </section>
-         </div>
-    </main>
-    <footer>
-        <div class="flex flex-col items-center justify-center space-y-6 py-10 mt-16 bg-[#2A1454]">
-            <img src="images/icon/logo-secondary.png" alt="" class="w-20">
-
-            <div class="flex gap-4 items-center  list-none">
-                <li class="text-white font-medium">Home</li>
-                <li class="text-white font-medium">Service</li>
-                <li class="text-white font-medium">Project</li>
-                <li class="text-white font-medium">Skill</li>
-                <li class="text-white font-medium">Resume</li>
-                <li class="text-white font-medium">Review</li>
-            </div>
-            <p>@ copy right not allows</p>
-
-        </div>
-    </footer>
 
 </body>
 
