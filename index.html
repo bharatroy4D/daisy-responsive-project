@@ -41,9 +41,9 @@
                 <!-- manus -->
                 <div class="flex gap-8 text-lg text-[#2A1454] font-semibold list-none">
                     <li class="hover:underline"><a href="#landing-page"> Home</a></li>
-                    <li class="hover:underline"><a href=""> Service</a></li>
-                    <li class="hover:underline"><a href=""> Works</a></li>
-                    <li class="hover:underline"><a href=""> Resume</a></li>
+                    <li class="hover:underline"><a href="#service"> Service</a></li>
+                    <li class="hover:underline"><a href="#work"> Works</a></li>
+                    <li class="hover:underline"><a href="#education"> Resume</a></li>
                     <li class="hover:underline"><a href=""> Skills</a></li>
                     <li class="hover:underline"><a href=""> Testimonial</a></li>
                     <li class="hover:underline"><a href=""> Contact</a></li>
@@ -77,19 +77,19 @@
                     <div class="flex items-center gap-5 py-4">
                         <div>
                             <button
-                                class="flex items-center gap-2 border border-[#AC86F9] py-3 px-5 rounded-full text-[#AC86F9] font-semibold">Download
-                                CV <img src="images/icon/download.png" alt="" class="w-5 "></button>
+                                class="flex items-center gap-2 border hover:bg-[#AC86F9] border-[#AC86F9] py-3 px-5 rounded-full text-[#AC86F9] hover:text-white font-semibold">Download
+                                cv <img src="images/icon/download.png" alt="" class="w-5 "></button>
                         </div>
 
                         <div class="flex gap-3">
                             <img src="images/icon/facebook (1).png" alt=""
-                                class="w-8 h-8 p-1 border border-[#AC86F9] rounded-full">
+                                class="w-8 h-8 p-1 border border-[#AC86F9] hover:bg-gray-400 rounded-full">
 
                             <img src="images/icon/search-engine.png" alt=""
-                                class="w-8 h-8 p-1 border border-[#AC86F9] rounded-full">
+                                class="w-8 h-8 p-1 border border-[#AC86F9] hover:bg-gray-400 rounded-full">
 
                             <img src="images/icon/github.png" alt=""
-                                class="w-8 h-8 p-1 border border-[#AC86F9] rounded-full">
+                                class="w-8 h-8 p-1 border border-[#AC86F9] hover:bg-gray-400 rounded-full">
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
             </div>
         </section>
         <!-- service section -->
-        <section class="bg-[#F6F3FC]">
+        <section id="service" class="bg-[#F6F3FC] ">
             <div class=" py-16">
                 <!-- service description -->
                 <div>
@@ -179,7 +179,7 @@
         </section>
 
         <!--work section  -->
-        <section>
+        <section id="work">
             <div class="py-16">
                 <div>
                     <h1
@@ -232,10 +232,10 @@
             </div>
         </section>
         <!-- experiance and education section -->
-        <section class="bg-[#F6F3FC]">
+        <section id="education" class="bg-[#F6F3FC] flex justify-between gap-14">
             <!-- experiance div -->
-            <div class="py-14">
-                <div class="flex items-center  gap-3 pb-12 pl-4">
+            <div class="py-14  w-1/2">
+                <div class="flex items-center  gap-3 pt-5 pb-12 pl-4">
                     <img src="images/icon/favorites.png" alt="" class="w-12 h-12">
                     <h1
                         class="text-4xl font-bold py-3  text-transparent bg-clip-text bg-gradient-to-tl from-blue-950 to-[#8750F7] ">
@@ -271,43 +271,101 @@
                 </div>
 
             </div>
+
             <!-- education div -->
-            <div class="py-14">
-                <div class="flex items-center  gap-3 pb-12 pl-4">
-                    <img src="images/icon/favorites.png" alt="" class="w-12 h-12">
+            <div class="py-14 w-1/2">
+                <div class="flex items-center  gap-3 pt-5 pb-12 ">
+                    <img src="images/icon/graduation.png" alt="" class="w-12 h-12">
                     <h1
                         class="text-4xl font-bold py-3  text-transparent bg-clip-text bg-gradient-to-tl from-blue-950 to-[#8750F7] ">
-                        My Recent Works</h1>
+                        My Education</h1>
                 </div>
                 <!-- card-1 -->
                 <div
-                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] ml-4 p-4 mb-12 rounded-2xl">
+                    class="bg-white  hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] mr-4 p-4 mb-12 rounded-2xl">
                     <h3 class="text-xl font-bold text-[#8750F7] hover:text-white">2020-Present</h3>
                     <h2 class="text-3xl font-bold py-1 text-[#2A1454] hover:text-white">Lead Developer</h2>
                     <p class="text-lg font-medium  text-[#2A1454] hover:text-white">Blackdots Londons</p>
                 </div>
                 <!-- card-2 -->
                 <div
-                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] ml-4 p-4 mb-12 rounded-2xl">
+                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] mr-4 p-4 mb-12 rounded-2xl">
                     <h3 class="text-xl font-bold text-[#8750F7] hover:text-white">2020-2021</h3>
                     <h2 class="text-3xl font-bold py-1 text-[#2A1454] hover:text-white">Full stack Developer</h2>
                     <p class="text-lg font-medium  text-[#2A1454] hover:text-white">Person, The New school</p>
                 </div>
                 <!-- card-3 -->
                 <div
-                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] ml-4 p-4 mb-12 rounded-2xl">
+                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] mr-4 p-4 mb-12 rounded-2xl">
                     <h3 class="text-xl font-bold text-[#8750F7] hover:text-white">2021-2022</h3>
                     <h2 class="text-3xl font-bold py-1 text-[#2A1454] hover:text-white">UI/UX Designer</h2>
                     <p class="text-lg font-medium  text-[#2A1454] hover:text-white">House of lite, live</p>
                 </div>
                 <!-- card-4 -->
                 <div
-                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] ml-4 p-4 mb-12 rounded-2xl">
+                    class="bg-white hover:bg-gradient-to-l hover:from-blue-950 hover:to-[#8750F7] mr-4 p-4 mb-12 rounded-2xl">
                     <h3 class="text-xl font-bold text-[#8750F7] hover:text-white">2022-2023</h3>
                     <h2 class="text-3xl font-bold py-1 text-[#2A1454] hover:text-white">Digital Marketin</h2>
                     <p class="text-lg font-medium  text-[#2A1454] hover:text-white">Product sale</p>
                 </div>
 
+            </div>
+        </section>
+        <!-- services -->
+        <section class="py-12">
+            <div class="py-4">
+                <h1
+                    class="text-5xl font-bold py-3 text-center text-transparent bg-clip-text bg-gradient-to-tl from-blue-950 to-[#8750F7]">
+                    Services</h1>
+                <p class="tex-lg font-medium text-[#2A1454] text-center pt-2 w-3/5 mx-auto">OFFERED SERVICES</p>
+            </div>
+            <!-- card item -->
+            <div class="card-container grid grid-cols-1 md:grid-cols-2 gap-5 p-4">
+                <!-- card-1 -->
+                <div class=" border border-gray-300 p-5 hover:transform hover:scale-105 hover:transition hover:duration-1000 hover:bg-gray-200 rounded-lg">
+                    <figure class="pb-4">
+                        <img src="images/icon/web-develop.png" alt="" class="w-12 ">
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-medium text-[#8750F7]  ">Web Development</h2>
+                        <p class="text-lg text-[#2A1454]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Molestiae minus ut fuga nisi corporis tenetur. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div
+                    class=" border border-gray-300 p-5 rounded-lg  hover:transform hover:scale-105 hover:bg-gray-200 hover:transition hover:duration-1000 ">
+                    <figure class="pb-4">
+                        <img src="images/icon/design.png" alt="" class="w-12 ">
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-medium text-[#8750F7]  ">UI/UX Designer</h2>
+                        <p class="text-lg text-[#2A1454]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Molestiae minus ut fuga nisi corporis tenetur. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="border border-gray-300 p-5 rounded-lg  hover:transform hover:scale-105 hover:bg-gray-200 hover:transition hover:duration-1000 ">
+                    <figure class="pb-4">
+                        <img src="images/icon/writing.png" alt="" class="w-12 ">
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-medium text-[#8750F7]  ">Content writing</h2>
+                        <p class="text-lg text-[#2A1454]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Molestiae minus ut fuga nisi corporis tenetur. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class=" border border-gray-300 p-5 rounded-lg  hover:transform hover:scale-105 hover:transition hover:duration-1000 hover:bg-gray-200">
+                    <figure class="pb-4">
+                        <img src="images/icon/d-marketing.png" alt="" class="w-12 ">
+                    </figure>
+                    <div class="">
+                        <h2 class="text-2xl font-medium text-[#8750F7]  ">Digital marketing</h2>
+                        <p class="text-lg text-[#2A1454]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Molestiae minus ut fuga nisi corporis tenetur. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
